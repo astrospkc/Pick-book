@@ -12,7 +12,7 @@ app = Flask(__name__)
 def index():
     return render_template('index.html',
                            book_name = list(popular_df['Book-Title'].values),
-                        #    image = list(popular_df['Image-URL-M_x'].values),
+                           image = list(popular_df['Image-URL-M_x'].values),
                             author = list(popular_df['Book-Author_x'].values),
                             votes = list(popular_df['Num_Book_Rating'].values),
                             ratings = list(popular_df['Avg_Book_Rating'].values)
